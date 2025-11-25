@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+footer {
+  padding: 16px 0;
+  margin-top: 6px;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+footer .copy {
+  text-align: center;
+  display: block;
+  color: #666;
+  font-size: 0.875rem;
+}
+footer nav a {
+  font-size: 1.1875rem;
+  color: #000000;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+body {
+  font-family: "Roboto", Sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*##### FONTES #######*/
+h1 {
+  color: #db0000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.dark {
+  color: #000000;
+}
+strong {
+  text-align: center;
+  font-family: "Roboto", Sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+/*##### HEADER #######*/
+header {
+  background-color: #ae0000;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 81px;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+header h3 {
+  font-size: 22px;
+  color: #db0000;
+  font-weight: 600;
+}
+
+.number {
+  display: block;
+  font-family: "Roboto", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  background-color: #000000;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 100px;
+  margin-top: 4px;
+  line-height: 26px;
+}
+
+.mt-l {
+  margin-left: 10px;
+}
+
+.color-gray-2 {
+  background-color: #7f7f7f;
+}
+
+.shipping {
+  background-color: #fff;
+  padding: 24px 20px 32px 20px;
+}
+
+.shipping h1 {
+  font-size: 40px;
+  margin: 40px 0px 16px 0px;
+}
+
+.shipping p {
+  font-size: 18px;
+}
+
+.shipping .box-item .options > hr {
+  background-color: #7f7f7f;
+}
+
+.shipping .box-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.shipping .box-item p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.shipping .box-item hr {
+  width: 220px;
+  background-color: #000000;
+  height: 8px;
+  border-radius: 10px;
+}
+
+/*##### MAIN #######*/
+main h2 {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+main .content-product {
+  width: 50%;
+  text-align: center;
+}
+
+main .content-product img {
+  width: 60%;
+  margin-top: 24px;
+}
+
+.content-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  border: 2px dashed #000000;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 36px;
+  padding: 40px 16px 40px 16px;
+}
+
+.content-price .p2 {
+  font-size: 23px;
+  line-height: 34px;
+}
+
+.content-price p {
+  font-size: 16px;
+}
+
+.p2 {
+  font-size: 23px;
+  line-height: 34px;
+}
+
+.p1 {
+  font-size: 16px;
+}
+
+.content-price h3 {
+  color: #00a30c;
+  margin: 40px 0px;
+}
+
+.dt {
+  text-decoration: underline;
+  margin-top: 40px;
+}
+
+.flex-s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-cta {
+  display: block;
+  font-family: "Roboto", Sans-serif;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  background-color: #e3a814;
+  border-radius: 34px;
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+  margin: 40px 0px;
+}
+
+.content-burn h3 {
+  margin-top: 40px;
+}
+
+.flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*##### PRICE #######*/
+
+.price-box-2 {
+  margin: 64px 0px 24px 0px;
+}
+.price-box-2 img {
+  width: 40%;
+}
+
+.price-box-2 .dt {
+  margin: 0px;
+}
+
+.color-gray {
+  background-color: #f9f9f9;
+}
+
+/*##### GARANTIA #######*/
+.garantia {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 0px;
+}
+
+.garantia img {
+  width: 40%;
+  margin: 32px 0px 48px 0px;
+}
+
+.garantia p {
+  font-size: 23px;
+}
+
+.garantia b {
+  font-weight: 600;
+}
+
+/*##### RESPONSIVIDADE #######*/
+
+@media (max-width: 800px) {
+  .shipping .box-item hr {
+    width: 110px;
+  }
+
+  .shipping h1 {
+    font-size: 30px;
+  }
+
+  main .content-product {
+    width: 100%;
+    margin: 40px 0px;
+  }
+
+  main h2 {
+    font-size: 30px;
+  }
+
+  main .content-product img {
+    width: 90%;
+    margin-top: 24px;
+  }
+
+  .content-price {
+    width: 100%;
+  }
+
+  .flex-s {
+    flex-wrap: wrap;
+  }
+
+  .button-cta {
+    font-size: 24px;
+  }
+
+  .price-box-2 img {
+    width: 90%;
+  }
+
+  .garantia img {
+    width: 80%;
+    margin: 32px 0px 48px 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shipping .box-item hr {
+    width: 50px;
+    background-color: #000000;
+    height: 8px;
+    border-radius: 10px;
+  }
+}

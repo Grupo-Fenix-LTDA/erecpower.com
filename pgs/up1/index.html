@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ErecPower</title>
+  <link rel="shortcut icon" href="assets/images/fav.svg" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+
+  <script>
+    document.addEventListener(
+      "contextmenu",
+      function (e) {
+        e.preventDefault();
+      },
+      false
+    );
+  </script>
+  <!-- Begin of Digistore24 Trusted Badge Code -->
+  <!-- End of Digistore24 Trusted Badge Code -->
+
+  <style>
+    body {
+      -webkit-user-select: none;
+      /* Safari */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* IE10+/Edge */
+      user-select: none;
+      /* Propriedade padrão */
+    }
+
+    header {
+      background: linear-gradient(rgb(255 0 38),
+          rgb(123 0 9) 76%,
+          rgb(201 16 16 / 64%)),
+        linear-gradient(rgb(225 3 3), rgb(0 0 0));
+      padding: 16px 20px;
+      color: #fff;
+    }
+
+    .bandeiras {
+      max-width: 140px;
+    }
+
+    .modal-container {
+      height: 100vh;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.487);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2000;
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-container.ativo {
+      display: flex;
+    }
+
+    .button-negation {
+      animation: pul 0.8s infinite alternate;
+    }
+
+    @keyframes pul {
+      to {
+        transform: scale(1.03);
+      }
+    }
+
+    .kits .kit .header {
+      background: linear-gradient(rgb(255 0 38),
+          rgb(183 12 24) 76%,
+          rgba(48, 2, 2, 0.637)),
+        linear-gradient(rgb(217 64 64), rgb(181 8 8));
+    }
+
+    .kits .kit.best {
+      background: #fff4d4;
+      transform: scale(1.03);
+    }
+
+    .modal {
+      background: #fff;
+      padding: 20px;
+      border: 10px solid #621313;
+      box-shadow: 0 0 0 10px #fff;
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    @media (max-width: 550px) {
+      .modal {
+        padding: 14px 10px;
+      }
+
+      .button-negation {
+        padding: 20px 12px;
+      }
+
+      .kits {
+        margin: 0 15px;
+      }
+    }
+
+    .modal .topo {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .modal .topo h2 {
+      font-size: 30px;
+      color: #7e2438;
+    }
+
+    @media (max-width: 550px) {
+      .modal .topo h2 {
+        font-size: 22px;
+      }
+    }
+
+    .modal .topo h3 {
+      max-width: 60ch;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 550px) {
+      .modal .topo h3 {
+        font-size: 14px;
+      }
+    }
+
+    .modal .topo span {
+      color: #cb4357;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 550px) {
+      .modal .topo span {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .modal .btn {
+        font-size: 14px;
+      }
+    }
+
+    .kits .kit .header {
+      background: linear-gradient(rgb(255 0 38),
+          rgb(183 12 24) 76%,
+          rgba(48, 2, 2, 0.637)),
+        linear-gradient(rgb(217 64 64), rgb(181 8 8));
+    }
+
+    .kits .kit.best {
+      background: #fff4d4;
+      transform: scale(1.03);
+    }
+
+    .modal .content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      place-items: center;
+      gap: 14px;
+    }
+
+    @media (max-width: 550px) {
+      .modal .content {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      .modal .content img {
+        max-width: 140px;
+      }
+    }
+
+    .modal .content p {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 550px) {
+      .modal .content p {
+        display: none;
+      }
+    }
+
+    .modal .no {
+      display: block;
+      text-align: center;
+      color: #666666;
+      text-decoration: underline;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    @keyframes modal {
+      from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .ativo .modal {
+      animation: modal 0.5s forwards;
+    }
+
+    .fechar {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 50px;
+      height: 50px;
+      border: 4px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+      background: #621313;
+      font-size: 1.2em;
+      color: #fff;
+      font-family: "IBM Plex Mono", monospace;
+      cursor: pointer;
+    }
+
+    .btn_ {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      max-width: 600px;
+      background: #039111;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      text-transform: uppercase;
+      border-radius: 100px;
+      margin: 30px auto;
+      width: 100%;
+      transition: all 0.6s;
+      font-family: "Roboto", sans-serif;
+      box-shadow: #0a5b01 0 10px;
+      animation: pultar infinite 0.8s alternate;
+    }
+
+    .btn_:hover {
+      filter: brightness(80%);
+    }
+
+    @media (max-width: 550px) {
+      .btn_ {
+        font-size: 16px;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="text-center">
+    <h2>We Are Currently Preparing Your Order...</h2>
+  </header>
+  <main class="container">
+    <h1 class="text-center">
+      <svg width="30" height="27" viewBox="0 0 30 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.9227 1.11013L29.7025 23.2446C29.8974 23.5821 30 23.965 30 24.3547C30 24.7445 29.8974 25.1273 29.7026 25.4648C29.5077 25.8024 29.2274 26.0826 28.8899 26.2775C28.5524 26.4724 28.1695 26.575 27.7798 26.575H2.2202C1.83047 26.575 1.44761 26.4724 1.11009 26.2775C0.772578 26.0826 0.492305 25.8024 0.297444 25.4648C0.102582 25.1273 -2.47521e-06 24.7445 0 24.3547C2.4753e-06 23.965 0.102592 23.5821 0.297458 23.2446L13.0773 1.11013C13.9313 -0.370043 16.0672 -0.370043 16.9227 1.11013ZM15 18.6531C14.6074 18.6531 14.2309 18.8091 13.9534 19.0867C13.6758 19.3642 13.5198 19.7407 13.5198 20.1333C13.5198 20.5259 13.6758 20.9023 13.9534 21.1799C14.2309 21.4575 14.6074 21.6135 15 21.6135C15.3926 21.6135 15.7691 21.4575 16.0466 21.1799C16.3242 20.9023 16.4802 20.5259 16.4802 20.1333C16.4802 19.7407 16.3242 19.3642 16.0466 19.0867C15.7691 18.8091 15.3926 18.6531 15 18.6531ZM15 8.29192C14.6375 8.29197 14.2875 8.42507 14.0166 8.66598C13.7457 8.90689 13.5726 9.23886 13.5302 9.59891L13.5198 9.77209V15.6928C13.5202 16.07 13.6647 16.4329 13.9237 16.7072C14.1827 16.9816 14.5366 17.1467 14.9133 17.1688C15.2899 17.1909 15.6607 17.0683 15.95 16.8262C16.2393 16.5841 16.4252 16.2406 16.4698 15.866L16.4802 15.6928V9.77209C16.4802 9.37953 16.3242 9.00304 16.0466 8.72545C15.7691 8.44787 15.3926 8.29192 15 8.29192Z" fill="#AC2716" />
+      </svg>
+
+      DO NOT CLOSE THIS PAGE!
+    </h1>
+    <h3 class="text-center red">
+      WAIT! Take Advantage Of This Special Deal Reserved For New Customers
+      Only!
+    </h3>
+
+    <div class="content">
+      <h3>Dear Valued Member,</h3>
+      <p>
+        I’m thrilled to extend my warmest congratulations as you embark on a
+        transformative journey with your acquisition of the ErecPower package.
+        Your decision today marks the beginning of an extraordinary
+        transformation that will soon yield remarkable benefits. <br /><br />
+
+        It’s crucial to stay on this page without closing it or navigating
+        away, to ensure you’re not inadvertently charged more than once. Rest
+        assured, you’re exactly where you need to be!<br /><br />
+
+        We’re in the process of preparing your order, and I encourage you to
+        keep reading. Important insights are about to be shared, and this
+        message is a one-time opportunity that deserves your full
+        attention.<br /><br />
+
+        Prepare to experience a significant enhancement in strength, stamina,
+        and overall performance, both at the gym and in your professional
+        life. Your confidence and prowess will reach new heights, ensuring
+        memorable moments and unparalleled satisfaction in your personal
+        relationships.<br /><br />
+
+        Forget about the stress of performance anxiety or those moments of
+        uncertainty. You’re on the path to a fulfilling life, rich in joy and
+        mutual satisfaction.<br /><br />
+
+        Welcome to your new beginning.
+      </p>
+    </div>
+    <div class="content-2">
+      <p>
+        <strong class="red">Unlike any other product on the market, ErecPower comes with a few
+          amazing benefits, for long term users.</strong>
+      </p>
+      <ul>
+        <li>
+          <strong>♂️ </strong>Have longer lasting, full of pleasure
+          encounters, literally any time of the day.
+        </li>
+        <li>
+          <strong>♂️ </strong>Achieve full control over your performance,
+          making old problems a thing of the past.
+        </li>
+        <li>
+          <strong>♂️ </strong>Have solid hard-rock, literally on demand, to
+          pleasure your partner even if it’s 3am.
+        </li>
+      </ul>
+      <div class="flex-c">
+        <img src="assets/images/mulher-transando.jpg" alt="homem furando" />
+      </div>
+    </div>
+    <p>
+      Dive into the world of testimonials from genuine individuals who have
+      been harnessing the benefits of ErecPower for months, and even years.
+      The transformations they’ve experienced are exceptional and not the
+      standard outcome for every user, as results can vary.<br /><br />
+
+      Daily, we’re contacted by sincere individuals who share how ErecPower
+      has revolutionized their lives and the lives of their partners.
+      Witnessing their journey has highlighted the profound impact of every
+      ErecPower tablet.<br /><br />
+
+      This is why I’m excited to present a unique offer for you to replenish
+      your supply with an additional 9 bottles of ErecPower at an exclusive
+      discounted rate of only $29 per bottle. This offer helps you save $621
+      and is available today before our stock depletes.<br /><br />
+
+      It’s undeniable that the cost of this exceptional, natural blend will
+      rise shortly. The demand for premium ingredients is surging, and
+      maintaining our supply is becoming increasingly challenging.<br /><br />
+
+      Seize this opportunity to ensure your experience with ErecPower remains
+      uninterrupted by securing 9 more bottles today. Due to the soaring
+      demand and the potential difficulty in sourcing our essential
+      ingredients, prices may increase for future batches.<br /><br />
+
+      This could be your final chance to enhance your ErecPower collection at
+      this rate. Plus, we’re offering free shipping and handling, adding even
+      more value to this special deal.<br /><br />
+
+      Here’s what you’ll receive with today’s order: 9 extra bottles of
+      ErecPower for just $29 each, a significant saving from the regular price
+      of $89 per bottle. This deal includes complimentary shipping and access
+      to our 24/7 VIP customer service for any inquiries.
+    </p>
+  </main>
+
+  <section class="price">
+    <h3 class="text-center">
+      Your total comes to $261, saving you $621 on your purchase.
+    </h3>
+
+    <div class="kits container">
+      <div class="kit">
+        <div class="header">
+          <h2>Try One</h2>
+          <span>30 Days, 1 Bottle</span>
+        </div>
+
+        <div class="content">
+          <img src="assets/images/PRODx1.webp" class="prod" alt="30 Days, 1 Bottle" />
+
+          <div class="preco">
+            <strong>$89</strong>
+            <span>Per <br />
+              Bottle</span>
+          </div>
+
+          <ul>
+            <li class="primeiro">YOU SAVE $110!</li>
+            <li>60-DAYS GUARANTEE</li>
+          </ul>
+
+          <a href="https://www.checkout-ds24.com/product/541451" class="btn">
+            <picture>
+              <img style="position: static; display: block !important" src="assets/images/btn.svg" title="Buy Now" alt="Buy Now" />
+            </picture>
+          </a>
+
+          <img src="assets/images/cards.webp" alt="cards" class="bandeiras" />
+
+          <div class="tot">
+            <span>TOTAL: <s>$179</s> $89</span>
+            <span>+ SHIPPING </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kit best">
+        <div class="header">
+          <h2>Best Value</h2>
+          <span>180 Days, 6 Bottles </span>
+        </div>
+
+        <div class="content">
+          <img src="assets/images/PRODx6.webp" class="prod" alt="180 Days, 6 Bottles " />
+
+          <div class="preco">
+            <strong>$49</strong>
+            <span>Per <br />
+              Bottle</span>
+          </div>
+
+          <ul>
+            <li class="primeiro">YOU SAVE $780!</li>
+            <li>BIGGEST DISCOUNT</li>
+            <li>60-DAYS GUARANTEE</li>
+          </ul>
+
+          <a href="https://www.checkout-ds24.com/product/541455" class="btn">
+            <picture><img src="assets/images/btn.svg" title="Buy Now" alt="Buy Now" /></picture>
+          </a>
+
+          <img src="assets/images/cards.webp" alt="cards" class="bandeiras" />
+
+          <div class="tot">
+            <span>TOTAL: <s>$1074</s> $294</span>
+            <span>+ <strong>FREE</strong> US SHIPPING </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="kit med">
+        <div class="header">
+          <h2>Most Popular</h2>
+          <span>90 Days, 3 Bottles </span>
+        </div>
+
+        <div class="content">
+          <img src="assets/images/PRODx3.webp" class="prod" alt="90 Days, 3 Bottles " />
+
+          <div class="preco">
+            <strong>$69</strong>
+            <span>Per <br />
+              Bottle</span>
+          </div>
+
+          <ul>
+            <li class="primeiro">YOU SAVE $360!</li>
+            <li>BIGGEST DISCOUNT</li>
+            <li>60-DAYS GUARANTEE</li>
+          </ul>
+
+          <a href="https://www.checkout-ds24.com/product/541454" class="btn">
+            <picture>
+              <img src="assets/images/btn.svg" title="Buy Now" alt="Buy Now" />
+            </picture>
+          </a>
+
+          <img src="assets/images/cards.webp" alt="cards" class="bandeiras" />
+
+          <div class="tot">
+            <span>TOTAL: <s>$537 </s> $207</span>
+            <span>+ <strong>FREE</strong> US SHIPPING </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info-kits">
+      <div class="container">
+        <h2 class="text-center">
+          Enjoying the long term benefits of ErecPower is the right choice
+          today.
+        </h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <p>
+        The reality is, the availability of our exceptional ErecPower formula
+        to the public is uncertain. With each passing day, the premium
+        ingredients that make ErecPower so effective are becoming harder to
+        come by. If our suppliers deplete their stocks, which is a very real
+        possibility at any moment, we will no longer be able to produce this
+        remarkable formula. Should this occur, the price of any remaining
+        ErecPower bottles will significantly increase.
+      </p>
+      <br /><br />
+
+      <p>
+        Therefore, I’m offering you a final opportunity to secure your supply
+        of ErecPower before we potentially face any ingredient shortages or
+        price hikes. This could be your last chance to benefit from this
+        formula that has already aided thousands of men in achieving lasting
+        benefits.
+      </p>
+      <br /><br />
+
+      <p>
+        You’re already aware of the advantages and the enduring impact of this
+        protocol. By taking up this exclusive offer today—available to you
+        right now—you’ll be safeguarding yourself against future difficulties
+        in obtaining ErecPower, as it may soon become extremely rare.
+      </p>
+      <br /><br />
+
+      <p>
+        Seize this unique offer by clicking the “Add to Order” button,
+        ensuring you continue to enjoy the lasting benefits of ErecPower.
+        Plus, remember that your purchase is protected by our 60-day
+        money-back guarantee. If you’re not completely satisfied with the
+        results at any point during that time, simply contact us via email or
+        phone, and you’ll be refunded every cent. No questions asked, no
+        complications, no bureaucracy.
+      </p>
+      <br /><br />
+
+      <p>
+        Act now and place your order to secure these long-term benefits today.
+      </p>
+
+      <div class="flex-c price-kit">
+        <h2>
+          ADD 9 BOTTLES (a 9-month SUPPLY) For Just $261 ($29 Per Bottle)
+        </h2>
+        <img class="img-kit" src="assets/images/kit-products.png" alt="kits" />
+        <img src="assets/images/button-price.png" alt="button" />
+
+        <span><b>– OR –</b></span>
+        <a class="button-negation" href="#" data-modal="abrir">NO THANKS | understand that this is my only opportunity to get
+          access to this special offer. and I'm okay with missing out. I'll
+          pass on this chance forever.</a>
+        <p>
+          I understand that this is the only chance I’ll have to take
+          advantage of this special offer. I acknowledge re-ordering later
+          will cost up to $89 per bottle. I will pass on this forever.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="garantia">
+    <div class="container">
+      <p>
+        Oh, and I can’t forget to mention something very important- you are
+        always protected by our
+        <b>60 DAY Iron-Clad 100% Money Back Guarantee</b>, so you have nothing
+        to lose and just a whole lot of savings to enjoy today!
+      </p>
+      <br /><br />
+
+      <p>
+        Just remember, this is a <b>one-time-only</b> offer and will no longer
+        be available once you leave this page. Take advantage of this
+        unprecedented opportunity to upgrade your ErecPower order below!
+      </p>
+      <div class="flex-c">
+        <img src="assets/images/60-Days-Money-Back-Guarantee-PNG-Pic.png" alt="garantia" />
+      </div>
+      <p>
+        Just remember, this is a <b>one-time-only</b> offer and will no longer
+        be available once you leave this page. Take advantage of this
+        unprecedented opportunity to upgrade your ErecPower order below!
+      </p>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="flex-c price-kit">
+      <h2>YES! I WANT TO ADD TO MY ORDER!</h2>
+      <h3>Add 9 Bottles Of ErecPower To My Order</h3>
+      <h4>$261 ($29/Bottle) -> And Save Me $621!!</h4>
+      <img class="img-kit" src="assets/images/kit-products.png" alt="kits" />
+      <img src="assets/images/button-price.png" alt="button" />
+
+      <span><b>– OR –</b></span>
+      <a class="button-negation" data-modal="abrir" href="#">NO THANKS | understand that this is my only opportunity to get access
+        to this special offer. and I'm okay with missing out. I'll pass on
+        this chance forever.</a>
+      <p>
+        I understand that this is the only chance I’ll have to take advantage
+        of this special offer. I acknowledge re-ordering later will cost up to
+        $89 per bottle. I will pass on this forever.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" bis_skin_checked="1">
+      <nav>
+        <a href="../terms.html">TERMS</a>
+        <a href="../privacy.html">PRIVACY</a>
+        <a href="../contact.html">contact</a><a href="../Disclaimer.html">Disclaimer</a>
+        <a href="../reference.html">reference</a><a href="../refund.html">refund</a>
+        <a href="../shipping.html">shipping</a>
+      </nav>
+      <p>
+        The information on this website has not been evaluated by the Food and
+        Drug Administration. These products are not intended to diagnose,
+        treat, cure or prevent any disease.
+      </p>
+      <span class="copy">© ErecPower 2024 All Rights Reserved. </span>
+    </div>
+  </footer>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+
+      <div class="topo">
+        <h2>WAIT!</h2>
+        <h3>
+          You must confirm that you are permanently turning down your chance
+          to grab 9 additional bottles of ErecPower for just $29 each
+        </h3>
+        <span>(a savings of $621 off the retail price!) </span>
+      </div>
+
+      <div class="content">
+        <div>
+          <p>
+            I understand that this is my ONLY opportunity to load up on
+            ErecPower for the special price of $29 per bottle and claim the
+            free shipping AND the four valuable bonuses.
+          </p>
+          <p>
+            I know that once I leave this page, when I want to order more
+            EndoBoost in the future, I'll have the pay the regular price of
+            $414 and probably shipping costs, too.
+          </p>
+        </div>
+        <img src="assets/img/Captura-de-pantalla-2024-02-26-095159.webp" alt="9 bottles" />
+      </div>
+
+      <a href="" class="btn_">
+        YES! PLEASE UPGRADE MY ORDER OF Erecpower <br />
+        FOR JUST $29 PER BOTTLE!
+      </a>
+
+      <a href="" class="no">No Thanks, I am happy to miss out and pay full price in the future</a>
+    </div>
+  </section>
+
+  <script>
+    function initModal() {
+      const btnAbrir = document.querySelectorAll('[data-modal="abrir"]');
+      const btnFechar = document.querySelector('[data-modal="fechar"]');
+      const containerModal = document.querySelector(
+        '[data-modal="container"]'
+      );
+
+      if (btnFechar && btnAbrir && containerModal) {
+        function toggleModal(e) {
+          e.preventDefault();
+          containerModal.classList.toggle("ativo");
+        }
+
+        function clickForaModal(e) {
+          if (e.target === this) toggleModal(e);
+        }
+
+        btnAbrir.forEach((b) => {
+          b.addEventListener("click", toggleModal);
+        });
+        btnFechar.addEventListener("click", toggleModal);
+        containerModal.addEventListener("click", clickForaModal);
+      }
+    }
+    initModal();
+  </script>
+</body>
+
+</html>
