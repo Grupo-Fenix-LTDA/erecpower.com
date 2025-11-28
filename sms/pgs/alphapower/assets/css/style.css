@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+body {
+  font-family: "Roboto", Sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/*##### FONTES #######*/
+h1 {
+  color: #db0000;
+  font-family: "Roboto", Sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.red {
+  color: #db0000;
+}
+
+.dark {
+  color: #000000;
+}
+strong {
+  text-align: center;
+  font-family: "Roboto", Sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+footer {
+  padding: 16px 0;
+  margin-top: 6px;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+footer .copy {
+  text-align: center;
+  display: block;
+  color: #666;
+  font-size: 0.875rem;
+}
+footer nav a {
+  font-size: 1.1875rem;
+  color: #000000;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+/*##### HEADER #######*/
+header {
+  background-color: #000000;
+  padding: 16px 20px;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 81px;
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+header h2 {
+  width: 44%;
+  margin: 24px 0px 32px 0px;
+}
+
+header h3 {
+  font-size: 22px;
+  color: #db0000;
+  font-weight: 600;
+}
+
+/*##### MAIN #######*/
+main p {
+  margin-top: 32px;
+}
+
+main p b {
+  font-weight: 600;
+  text-decoration: underline;
+}
+ul {
+  margin-left: 40px;
+  margin-top: 24px;
+
+  margin: 24px 0px 40px 40px;
+}
+ul li {
+  font-family: "Roboto", Sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+main h2 {
+  color: #0100d7;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.pote-alpha {
+  background-color: #f7f7f7;
+  margin: 16px 0px 8px 0px;
+}
+.pote-alpha img {
+  width: 40%;
+}
+
+.flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/*##### PRICE #######*/
+.benefit-box {
+  display: block;
+  margin-top: 4px;
+}
+
+.benefit-box .info-kits h2 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 0px;
+}
+
+.benefit-box h2 {
+  font-family: "Roboto", Sans-serif;
+  margin-bottom: 32px;
+  color: #0000ff;
+  font-weight: 600;
+}
+
+.color-gray {
+  background-color: #f9f9f9;
+}
+
+.benefit-alpha {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 48px 24px;
+  padding: 40px 0px;
+}
+
+.benefit-item {
+  width: 315px;
+}
+
+.benefit-item h3 {
+  font-family: "Roboto", Sans-serif;
+  color: #0000ff;
+  font-size: 34px;
+  margin-bottom: 36px;
+}
+
+.benefit-item p {
+  font-family: "Roboto", Sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.benefit-item img {
+  width: 80%;
+}
+
+.info-kits {
+  background-color: #000000;
+  padding: 10px 20px;
+  margin-bottom: 40px;
+}
+
+.price h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #00a30c;
+  font-family: "Roboto", Sans-serif;
+  font-weight: 600;
+  line-height: 48px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.price h3 {
+  font-size: 21px;
+  text-align: center;
+  margin: 16px 0px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.price-kit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  background-color: #f7f7f7;
+  padding: 24px 20px;
+  flex-wrap: wrap;
+}
+
+/*##### GARANTIA #######*/
+.garantia {
+  background-color: #000000;
+  color: #fff;
+  padding: 40px 0px;
+}
+
+.garantia img {
+  width: 40%;
+  margin: 32px 0px 48px 0px;
+}
+
+.garantia p {
+  font-size: 23px;
+}
+
+.garantia b {
+  font-weight: 600;
+}
+
+/*##### RESPONSIVIDADE #######*/
+
+@media (max-width: 720px) {
+  header h2 {
+    width: 100%;
+  }
+
+  .pote-alpha img {
+    width: 80%;
+  }
+
+  .benefit-box .info-kits h2 {
+    font-size: 30px;
+  }
+
+  .price-kit img {
+    width: 100%;
+  }
+
+  .price-kit h2 {
+    font-size: 30px;
+    width: 100%;
+    line-height: 48px;
+    margin-top: 40px;
+  }
+
+  .garantia img {
+    width: 80%;
+    margin: 32px 0px 48px 0px;
+  }
+}
