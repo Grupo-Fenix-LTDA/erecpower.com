@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlphaPower</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+
+  <script>var mysrc = "https://tracking.buygoods.com/track/?a=9135&firstcookie=0" + "&tracking_redirect=&referrer=" + encodeURIComponent(document.referrer) + "&sessid2=" + ReadCookie('sessid2') + "&product=alp1u,alp3u,alp3p,alp6u&vid1=&vid2=&vid3=&caller_url=" + encodeURIComponent(window.location.href); if (typeof add_to_cart !== 'undefined') { mysrc = mysrc + '&add_to_cart=' + add_to_cart; } var newScript = document.createElement('script'); newScript.type = 'text/javascript'; newScript.defer = true; newScript.src = mysrc; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(newScript, s); function ReadCookie(name) { name += '='; var parts = document.cookie.split(/;\s*/); for (var i = 0; i < parts.length; i++) { var part = parts[i]; if (part.indexOf(name) == 0) return part.substring(name.length) } return ''; }</script>
+
+  <script
+    type="text/javascript">var i = document.createElement("iframe"), oid = new URLSearchParams(window.location.search); i.async = true; i.style = "display:none"; i.setAttribute("src", "https://buygoods.com/affiliates/go/conversion/iframe/bg?a=9135&t=a4b1f9be768fba2123b19f691d46bea8&conversion=1&s=" + ReadCookie('sessid2') + "&o=" + oid.get('order_id_global') + "&ut=" + oid.get('token')); document.body.appendChild(i);</script>
+
+  <style>
+    .btn_price {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 12px 24px;
+      width: 100%;
+      max-width: 400px;
+      background: #fff036;
+      margin: 30px auto;
+      min-height: 56px;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 50px;
+      color: currentColor;
+      font-weight: bold;
+      font-size: 24px;
+      box-shadow: rgb(192, 148, 2) 0 4px;
+      animation: pulsar 0.8s alternate infinite;
+    }
+
+    .btn_price:hover {
+      filter: brightness(90%);
+    }
+
+    @keyframes pulsar {
+      to {
+        transform: scale(1.04);
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .benefit-alpha {
+      align-items: normal;
+    }
+
+    .benefit-item {
+      border: 2px solid red;
+      padding: 20px;
+      display: flex;
+
+      flex-direction: column;
+      align-items: center;
+    }
+  </style>
+
+  <style>
+    .kits {
+      padding: 80px 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .destaque {
+      font-size: 20px;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+      display: block;
+    }
+
+    .kits .kit .header {
+      background: linear-gradient(rgb(69, 50, 238),
+          #343479,
+          rgba(18, 2, 79, 0.637)),
+        linear-gradient(rgb(64, 102, 217), rgb(27, 1, 75)) !important;
+    }
+
+    .kits .kit.best {
+      background: #fff4d4;
+      transform: scale(1.03);
+    }
+
+    .kits .kit .header h2 {
+      margin: 0;
+    }
+
+    @media (max-width: 900px) {
+      .kits {
+        padding: 40px 0;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .kits {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    .kits .kit {
+      box-shadow: rgba(46, 44, 165, 0.25) 4px 4px 15px 0px;
+      background: #fff;
+      border-radius: 20px;
+      text-align: center;
+      overflow: hidden;
+      transition: all 0.7s;
+    }
+
+    .kits .kit:hover {
+      transform: scale(1.06);
+    }
+
+    .kits .kit.best {
+      border: 3px solid rgb(46, 2, 155);
+    }
+
+    @media (max-width: 900px) {
+      .kits .kit.best {
+        grid-row: 1;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .kits .kit.med {
+        grid-row: 2;
+      }
+    }
+
+    .kits .kit .header {
+      padding: 8px 12px;
+      margin-bottom: 35px;
+    }
+
+    .kits .kit .header * {
+      color: #fff;
+    }
+
+    .kits .kit .header h2 {
+      font-size: 30px;
+    }
+
+    .kits .kit .content {
+      padding: 0 20px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .kits .kit .content .prod {
+      height: 200px;
+      -o-object-fit: contain;
+      object-fit: contain;
+      margin-bottom: 30px;
+    }
+
+    .kits .kit .content .preco {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 8px;
+    }
+
+    .kits .kit .content .preco strong {
+      font-weight: 900;
+      font-size: 90px;
+      line-height: 1;
+    }
+
+    .kits .kit .content .preco span {
+      text-align: left;
+      margin-bottom: 12px;
+      line-height: 1;
+      font-weight: 500;
+    }
+
+    .kits .kit .content ul {
+      border-top: 1px solid rgba(46, 44, 165, 0.25);
+      width: 100%;
+      margin: 20px 0;
+    }
+
+    .kits .kit .content ul li {
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      gap: 12px;
+      border-bottom: 1px solid rgba(46, 44, 165, 0.25);
+    }
+
+    .kits .kit .content ul li.primeiro {
+      color: #621313;
+    }
+
+    .bandeiras {
+      max-width: 140px;
+    }
+
+    .kits .kit .content ul li::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      display: block;
+      background: url(assets/images/check.svg) no-repeat;
+      background-size: contain;
+      background-position: center;
+    }
+
+    .kits .kit .content .btn {
+      margin-bottom: 20px;
+      transition: all 0.6s;
+    }
+
+    .kits .kit .content .btn:hover {
+      transform: scale(1.03);
+      filter: brightness(90%);
+    }
+
+    .kits .kit .content .tot {
+      margin-top: 20px;
+      display: grid;
+    }
+
+    .kits .kit .content .tot span {
+      font-weight: 500;
+      font-size: 24px;
+    }
+
+    .kits .kit .content .tot span s {
+      text-decoration: line-through;
+      text-decoration-color: #621313;
+      margin-right: 12px;
+    }
+
+    .kits .kit .content .tot span strong {
+      color: #621313;
+    }
+  </style>
+
+  <style>
+    .modal-container {
+      height: 100vh;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.487);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 2000;
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .modal-container.ativo {
+      display: flex;
+    }
+
+    .modal {
+      background: #fff;
+      padding: 20px;
+      border: 10px solid #621313;
+      box-shadow: 0 0 0 10px #fff;
+      position: relative;
+      width: 90%;
+      max-width: 800px;
+    }
+
+    @media (max-width: 550px) {
+      .modal {
+        padding: 14px 10px;
+      }
+
+      .button-negation {
+        padding: 20px 12px;
+      }
+
+      .kits {
+        margin: 0 15px;
+      }
+    }
+
+    .modal .topo {
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .modal .topo h2 {
+      font-size: 30px;
+      color: #7e2438;
+    }
+
+    @media (max-width: 550px) {
+      .modal .topo h2 {
+        font-size: 22px;
+      }
+    }
+
+    .modal .topo h3 {
+      max-width: 60ch;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 550px) {
+      .modal .topo h3 {
+        font-size: 14px;
+      }
+    }
+
+    .modal .topo span {
+      color: #cb4357;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 550px) {
+      .modal .topo span {
+        font-size: 20px;
+      }
+    }
+
+    @media (max-width: 550px) {
+      .modal .btn {
+        font-size: 14px;
+      }
+    }
+
+    .modal .content {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      place-items: center;
+      gap: 14px;
+    }
+
+    @media (max-width: 550px) {
+      .modal .content {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    @media (max-width: 550px) {
+      .modal .content img {
+        max-width: 140px;
+      }
+    }
+
+    .modal .content p {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 550px) {
+      .modal .content p {
+        display: none;
+      }
+    }
+
+    .modal .no {
+      display: block;
+      text-align: center;
+      color: #666666;
+      text-decoration: underline;
+      font-size: 14px;
+      margin-top: 40px;
+    }
+
+    @keyframes modal {
+      from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .ativo .modal {
+      animation: modal 0.5s forwards;
+    }
+
+    .fechar {
+      position: absolute;
+      top: -30px;
+      right: -30px;
+      width: 50px;
+      height: 50px;
+      border: 4px solid #fff;
+      border-radius: 50%;
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+      background: #621313;
+      font-size: 1.2em;
+      color: #fff;
+      font-family: "IBM Plex Mono", monospace;
+      cursor: pointer;
+    }
+
+    .btn_ {
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 24px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+      max-width: 600px;
+      background: #039111;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      text-transform: uppercase;
+      border-radius: 100px;
+      margin: 30px auto;
+      width: 100%;
+      transition: all 0.6s;
+      font-family: "Roboto", sans-serif;
+      box-shadow: #0a5b01 0 10px;
+      animation: pultar infinite 0.8s alternate;
+    }
+
+    .btn_:hover {
+      filter: brightness(80%);
+    }
+
+    @media (max-width: 550px) {
+      .btn_ {
+        font-size: 16px;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="text-center flex-c">
+    <h1>WAIT!</h1>
+    <h2>
+      Speed Up The Enhancing Effects of ERECPOWER By Claiming Your LIMITED
+      EDITION
+    </h2>
+    <h3>"Male POWER Pack" On This Page</h3>
+  </header>
+  <main class="container">
+    <p><strong>Hello, I’m bringing you a special promotion</strong></p>
+    <p>Exclusively for the dedicated customers of ErecPower…</p>
+    <p><strong>An Innovative Enhancement System</strong></p>
+    <p>Crafted for <b>Enhanced, Robust, Amplified, and Denser Results:</b></p>
+    <ul>
+      <li>Speed up and AMPLIFY ErecPower’s impacts</li>
+      <li>Strengthen and refine the male vitality network</li>
+      <li>Boost your libido for more intense, extended</li>
+    </ul>
+    <div class="flex-c">
+      <h2>We called: AlphaPower</h2>
+      <div class="container">
+        <div class="kits">
+          <div class="kit">
+            <div class="header">
+              <h2>Try One</h2>
+              <span>1 bottle<br></span>
+              <span>Basic</span>
+            </div>
+
+            <div class="content">
+              <img src="assets/images/1.webp" class="prod" alt="30 Days, 1 Bottle" />
+
+              <div class="preco">
+                <strong>$49</strong>
+                <span>Per <br />
+                  Bottle</span>
+              </div>
+
+              <ul>
+                <li>60-DAYS GUARANTEE</li>
+              </ul>
+
+              <a href="https://buygoods.com/secure/upsell/?account_id=9135&product_codename=alp1u&redirect=aHR0cHM6Ly9lcmVjcG93ZXIuY29tL3Bncy9idXJucG93ZXIv"
+                class="btn">
+                <picture><img src="assets/images/btn.svg" title="Buy Now" alt="Buy Now" /></picture>
+              </a>
+              <img src="assets/images/cards.webp" alt="cards" class="bandeiras" />
+
+              <div class="tot">
+                <span>TOTAL: $49</span>
+                <span>+ <strong>FREE</strong> US SHIPPING </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="kit best">
+            <div class="header">
+              <h2>Best Value</h2>
+              <span>6 bottles<br></span>
+              <span>Premium </span>
+            </div>
+
+            <div class="content">
+              <img src="assets/images/6.webp" class="prod" alt="180 Days, 6 Bottles " />
+
+              <div class="preco">
+                <strong>$27</strong>
+                <span>Per <br />
+                  Bottle</span>
+              </div>
+
+              <ul>
+
+                <li>BIGGEST DISCOUNT</li>
+                <li>60-DAYS GUARANTEE</li>
+              </ul>
+
+              <a href="https://buygoods.com/secure/upsell/?account_id=9135&product_codename=alp6u&redirect=aHR0cHM6Ly9lcmVjcG93ZXIuY29tL3Bncy9idXJucG93ZXIv"
+                class="btn">
+                <picture><img src="assets/images/btn.svg" title="Buy Now" alt="Buy Now" /></picture>
+              </a>
+
+              <img src="assets/images/cards.webp" alt="cards" class="bandeiras" />
+
+              <div class="tot">
+                <span>TOTAL: $162</span>
+                <span>+ <strong>FREE</strong> US SHIPPING </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="kit med">
+            <div class="header">
+              <h2>Most Popular</h2>
+              <span>3 bottles<br></span>
+              <span>Standard </span>
+            </div>
+
+            <div class="content">
+              <img src="assets/images/3.webp" class="prod" alt="90 Days, 3 Bottles " />
+
+              <div class="preco">
+                <strong>$39</strong>
+                <span>Per <br />
+                  Bottle</span>
+              </div>
+
+              <ul>
+
+                <li>BIGGEST DISCOUNT</li>
+                <li>60-DAYS GUARANTEE</li>
+              </ul>
+
+              <a href="https://buygoods.com/secure/upsell/?account_id=9135&product_codename=alp3u&redirect=aHR0cHM6Ly9lcmVjcG93ZXIuY29tL3Bncy9idXJucG93ZXIv"
+                class="btn">
+                <picture><img src="assets/images/btn.svg" title="Buy Now" alt="Buy Now" /></picture>
+              </a>
+
+              <img src="assets/images/cards.webp" alt="cards" class="bandeiras" />
+
+              <div class="tot">
+                <span>TOTAL: $117</span>
+                <span>+ <strong>FREE</strong> US SHIPPING </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <section class="benefit-box">
+    <div class="info-kits">
+      <h2 class="text-center">Special Edition Enhancement</h2>
+    </div>
+
+    <div class="container">
+      <p>
+        <b>AlphaPower</b> stands as a distinctive PURE & NATURAL blend of vitamins, crucial minerals, and nutrients for
+        a powerful boost to your sexual health!
+      </p>
+      <br /><br />
+    </div>
+
+    <h2 class="text-center">
+      Here’s the benefit of daily intake of AlphaPower!
+    </h2>
+    <div class="color-gray">
+      <div class="container">
+        <div class="benefit-alpha">
+          <div class="benefit-item">
+            <h3>MAXIMIZE TESTOSTERONE LEVELS:</h3>
+            <p>
+              Through this potent immune system modulator. This exclusive
+              formula supports elevated levels of free testosterone with
+              strong enhancers to fight off fatigue and muscle mass decline
+              while rejuvenating your zest for life.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <h3>BOOSTED POWER AND BULK:</h3>
+            <p>
+              Exclusive mix featuring Rhodiola Rosea Extract and Fenugreek
+              Seed as principal components to augment power & bulk.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <h3>ENHANCED SEXUAL DRIVE:</h3>
+            <p>
+              Reach new peaks of pleasure and rejuvenate your energy by
+              naturally boosting your testosterone generation.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <h3>REVITALIZED PENIS SENSITIVITY:</h3>
+            <p>
+              The potent Vitamin B6 + Magnesium COMPLEX enhances overall nervous system health and supports nerve
+              elasticity, while also assisting in reducing stress levels, for improved sexual performance.
+            </p>
+          </div>
+          <div class="benefit-item">
+            <img src="assets/images/ALPHA-6.jpg" alt="pote" />
+          </div>
+          <div class="benefit-item">
+            <h3>SLEEK, POWERFUL & PURE:</h3>
+            <p>
+              Not every supplement is made the same. Our pristine herbal
+              recipe is free from fillers, gluten, preservatives, animal
+              by-products, and synthetic additives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="text-center price" id="price">
+    <div class="container">
+      <h3>
+        Now, understanding the significance of enduring performance for every
+        man, I've arranged a special discount bundle for you, currently
+        available as a token of gratitude.
+      </h3>
+      <h2>
+        6 Bottles for just $162 $27 each<br />
+        (BY FAR OUR MOST POPULAR AND COST-EFFECTIVE PACKAGE TODAY AT A STEEP DISCOUNT!)<br />
+        HURRY! OFFER AVAILABLE TODAY! ORDER YOURS RIGHT NOW!
+      </h2>
+    </div>
+    <div class="container">
+      <div class="kits">
+        <div class="kit">
+          <div class="header">
+            <h2>Try One</h2>
+            <span>1 bottle<br></span>
+            <span>Basic</span>
+          </div>
+
+          <div class="content">
+            <img src="assets/images/1.webp" class="prod" alt="30 Days, 1 Bottle" />
+
+            <div class="preco">
+              <strong>$49</strong>
+              <span>Per <br />
+                Bottle</span>
+            </div>
+
+            <ul>
+              <li>60-DAYS GUARANTEE</li>
+            </ul>
+
+            <a href="https://buygoods.com/secure/upsell/?account_id=9135&product_codename=alp1u&redirect=aHR0cHM6Ly9lcmVjcG93ZXIuY29tL3Bncy9idXJucG93ZXIv"
+              class="btn">
+              <picture><img src="assets/images/btn.svg" title="Buy Now" alt="Buy Now" /></picture>
+            </a>
+            <img src="assets/images/cards.webp" alt="cards" class="bandeiras" />
+
+            <div class="tot">
+              <span>TOTAL: $49</span>
+              <span>+ <strong>FREE</strong> US SHIPPING </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kit best">
+          <div class="header">
+            <h2>Best Value</h2>
+            <span>6 bottles<br></span>
+            <span>Premium </span>
+          </div>
+
+          <div class="content">
+            <img src="assets/images/6.webp" class="prod" alt="180 Days, 6 Bottles " />
+
+            <div class="preco">
+              <strong>$27</strong>
+              <span>Per <br />
+                Bottle</span>
+            </div>
+
+            <ul>
+
+              <li>BIGGEST DISCOUNT</li>
+              <li>60-DAYS GUARANTEE</li>
+            </ul>
+
+            <a href="https://buygoods.com/secure/upsell/?account_id=9135&product_codename=alp6u&redirect=aHR0cHM6Ly9lcmVjcG93ZXIuY29tL3Bncy9idXJucG93ZXIv"
+              class="btn">
+              <picture><img src="assets/images/btn.svg" title="Buy Now" alt="Buy Now" /></picture>
+            </a>
+
+            <img src="assets/images/cards.webp" alt="cards" class="bandeiras" />
+
+            <div class="tot">
+              <span>TOTAL: $162</span>
+              <span>+ <strong>FREE</strong> US SHIPPING </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="kit med">
+          <div class="header">
+            <h2>Most Popular</h2>
+            <span>1 bottles<br></span>
+            <span>Standard </span>
+          </div>
+
+          <div class="content">
+            <img src="assets/images/3.webp" class="prod" alt="90 Days, 3 Bottles " />
+
+            <div class="preco">
+              <strong>$39</strong>
+              <span>Per <br />
+                Bottle</span>
+            </div>
+
+            <ul>
+
+              <li>BIGGEST DISCOUNT</li>
+              <li>60-DAYS GUARANTEE</li>
+            </ul>
+
+            <a href="https://buygoods.com/secure/upsell/?account_id=9135&product_codename=alp3u&redirect=aHR0cHM6Ly9lcmVjcG93ZXIuY29tL3Bncy9idXJucG93ZXIv"
+              class="btn">
+              <picture><img src="assets/images/btn.svg" title="Buy Now" alt="Buy Now" /></picture>
+            </a>
+
+            <img src="assets/images/cards.webp" alt="cards" class="bandeiras" />
+
+            <div class="tot">
+              <span>TOTAL: $117</span>
+              <span>+ <strong>FREE</strong> US SHIPPING </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="" class="destaque" data-modal="abrir">NO THANKS | understand that this is my only opportunity to get
+        access
+        to this special offer. and I'm okay with missing out. I'll pass on
+        this chance forever.</a>
+    </div>
+  </section>
+
+  <section class="garantia">
+    <div class="container">
+      <p>
+        Oh, and I can’t forget to mention something very important- you are
+        always protected by our
+        <b>60 DAY Iron-Clad 100% Money Back Guarantee</b>, so you have nothing
+        to lose and just a whole lot of savings to enjoy today!
+      </p>
+      <br /><br />
+
+      <p>
+        Just remember, this is a <b>one-time-only</b> offer and will no longer be available once you leave this page.
+        Take advantage of this unprecedented opportunity to upgrade your AlphaPower order below!
+
+      </p>
+      <div class="flex-c">
+        <img src="assets/images/60-Days-Money-Back-Guarantee-PNG-Pic.png" alt="garantia" />
+      </div>
+
+    </div>
+  </section>
+
+  <div class="container" style="margin-top: 40px">
+    <img src="assets/images/labalpha.jpg" alt="rotulo" class="rot" />
+  </div>
+  <footer>
+    <div class="container">
+      <nav>
+        <a href="../../terms.html">TERMS</a>
+        <a href="../../privacy.html">PRIVACY</a>
+        <a href="../../contact.html">contact</a>
+        <a href="../../Disclaimer.html">Disclaimer</a>
+        <a href="../../reference.html">reference</a>
+        <a href="../../refund.html">refund</a>
+        <a href="../../shipping.html">shipping</a>
+      </nav>
+
+      <span class="copy">© ErecPower
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All Rights Reserved.
+      </span>
+      <br><br>
+      <p class="copy">buygoods is the retailer of this product. buygoods® is a registered trademark of Click Sales,
+        Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410 Boise, ID 83709, USA and used by
+        permission. buygoods’s role as retailer does not constitute an endorsement, approval or review of this product
+        or any claim, statement or opinion used in promotion of this product.
+
+        Statements on this website have not been evaluated by the Food and Drug Administration. Products are not
+        intended to diagnose, treat, cure or prevent any disease. If you are pregnant, nursing, taking medication, or
+        have a medical condition, consult your physician before using our products.
+
+        Testimonials, case studies, and examples found on this page are results that have been forwarded to us by users
+        of ErecPower and related products are not intended to represent or guarantee that anyone will achieve the same
+        or similar results.
+      </p>
+      <br><br>
+      <p class="copy">
+        For Product Support, please contact us HERE.
+      </p>
+      <span id=disclaimer></span>
+      <script src="https://display.buygoods.com/v1/disclaimer?id=disclaimer&account_id=9135"></script>
+    </div>
+  </footer>
+
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+
+      <div class="topo">
+        <h2>WAIT!</h2>
+        <h3>
+          You must confirm that you are permanently turning down your chance
+          to grab 3 additional bottles of AlphaPower for just $29 each or $87
+        </h3>
+        <span>(a savings of $450 off the retail price!)</span>
+      </div>
+
+      <div class="content">
+        <div>
+          <p>
+            I understand that this is my ONLY opportunity to load up on
+            <b>AlphaPower</b> for the special price of $29 per bottle and
+            claim the free shipping AND the four valuable bonuses.
+          </p>
+          <p>
+            I know that once I leave this page, when I want to order more
+            <b>AlphaPower</b> in the future, I'll have the pay the regular
+            price of $179 and probably shipping costs, too.
+          </p>
+        </div>
+        <img src="assets/images/3.webp" alt="3 bottles" />
+      </div>
+
+      <a href="https://buygoods.com/secure/upsell/?account_id=9135&product_codename=alp3p&redirect=aHR0cHM6Ly9lcmVjcG93ZXIuY29tL3Bncy9idXJucG93ZXIv"
+        class="btn_">
+        YES! PLEASE UPGRADE MY ORDER OF ALPHAPOWER <br />
+        FOR JUST $87 FOR 3 BOTTLES!
+      </a>
+
+      <!-- https://erecpower.com/pgs/burnpower/ -->
+
+      <a href="https://erecpower.com/pgs/burnpower/" class="no">No Thanks, I am happy to miss out and pay full price in
+        the future</a>
+    </div>
+  </section>
+
+  <script>
+    function initModal() {
+      const btnAbrir = document.querySelectorAll('[data-modal="abrir"]');
+      const btnFechar = document.querySelector('[data-modal="fechar"]');
+      const containerModal = document.querySelector(
+        '[data-modal="container"]'
+      );
+
+      if (btnFechar && btnAbrir && containerModal) {
+        function toggleModal(e) {
+          e.preventDefault();
+          containerModal.classList.toggle("ativo");
+        }
+
+        function clickForaModal(e) {
+          if (e.target === this) toggleModal(e);
+        }
+
+        btnAbrir.forEach((b) => {
+          b.addEventListener("click", toggleModal);
+        });
+        btnFechar.addEventListener("click", toggleModal);
+        containerModal.addEventListener("click", clickForaModal);
+      }
+    }
+    initModal();
+  </script>
+</body>
+
+</html>

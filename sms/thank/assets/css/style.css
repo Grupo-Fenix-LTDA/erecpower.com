@@ -1,0 +1,157 @@
+.container {
+  max-width: 1135px;
+  margin: 0 auto;
+  width: 90%;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: #212529;
+  font-family: 'Open Sans', sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.title {
+  font-size: 1.875rem;
+  margin-bottom: 30px;
+}
+main {
+  padding: 80px;
+}
+@media (max-width: 900px) {
+  main {
+    padding: 40px 0;
+  }
+}
+main .container {
+  background: rgba(222, 188, 196, 0.5);
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(179, 127, 140, 0.3);
+  padding: 80px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 900px) {
+  main .container {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 30px;
+  }
+  main .container img {
+    grid-row: 1;
+  }
+}
+main .container h1 {
+  font-size: 3.75rem;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+@media (max-width: 900px) {
+  main .container h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 460px) {
+  main .container h1 {
+    font-size: 1.5rem;
+  }
+}
+main .container p {
+  font-size: 1.125rem;
+  margin-bottom: 12px;
+}
+@media (max-width: 900px) {
+  main .container p {
+    font-size: 1rem;
+  }
+}
+footer {
+  background: #111;
+  padding: 16px 0;
+  margin-top: 6px;
+}
+@media (min-width: 900px) {
+  footer {
+    padding: 48px 0;
+  }
+}
+footer .copy,
+footer p {
+  text-align: center;
+  display: block;
+  color: #666;
+  font-size: 0.875rem;
+}
+footer p {
+  margin-bottom: 20px;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+footer nav a {
+  font-size: 1.1875rem;
+  color: #f8f9fa;
+  padding: 8px 12px;
+  text-transform: uppercase;
+}
+.faixa {
+  background: #7c2130;
+  padding-bottom: 45px;
+  box-shadow: inset #fff 0 80px;
+}
+.faixa * {
+  color: #fff;
+}
+.faixa .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+}
+@media (max-width: 900px) {
+  .faixa .container {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+}
+.faixa .container .title {
+  padding-top: 80px;
+}
+@media (max-width: 900px) {
+  .faixa .container .title {
+    padding-top: 0;
+  }
+}
+.faixa .container p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  max-width: 40ch;
+}
+.quality {
+  padding: 80px 0;
+  text-align: center;
+}
+.quality .title {
+  margin-bottom: 60px;
+}
+.quality ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
